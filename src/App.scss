@@ -1,0 +1,122 @@
+@import "pantone-css/scss/pantone";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import "@smolpack/bootstrap-extensions/scss/functions";
+
+$cancer:      $pantone-1787-c;
+$leo:         $pantone-4008-c;
+$virgo:       $pantone-7406-c;
+$libra:       $pantone-2412-c;
+$scorpio:     $pantone-2193-c;
+$sagittarius: $pantone-528-c;
+$capricorn:   $pantone-1787-c;
+$aquarius:    $pantone-4008-c;
+$pisces:      $pantone-7406-c;
+$aries:       $pantone-2412-c;
+$taurus:      $pantone-2193-c;
+$gemini:      $pantone-528-c;
+
+$font-family-sans-serif: 'IBM Plex Sans', sans-serif;
+
+@import "@smolpack/bootstrap-extensions/scss/variables";
+
+$body-bg:    $black;
+$body-color: $white;
+
+$scopes: (
+  "cancer":      $cancer,
+  "leo":         $leo,
+  "virgo":       $virgo,
+  "libra":       $libra,
+  "scorpio":     $scorpio,
+  "sagittarius": $sagittarius,
+  "capricorn":   $capricorn,
+  "aquarius":    $aquarius,
+  "pisces":      $pisces,
+  "aries":       $aries,
+  "taurus":      $taurus,
+  "gemini":      $gemini
+);
+
+$colors: map-merge($colors, $scopes);
+
+$theme-colors: map-merge($scopes, $theme-colors);
+
+@import "@smolpack/bootstrap-extensions/scss/bootstrap-extensions";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.btn {
+  text-transform: uppercase;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  transition: $transition-base;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  background-color: transparent;
+  border-color: transparent;
+  color: inherit;
+}
+
+.block {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  width: 100%;
+  transition: $transition-base;
+}
+
+.block-foreground {
+  width: 100%;
+  height: 100%;
+}
+
+.block-title {
+  text-align: center;
+}
+
+.block-xs-bottom {
+  align-self: flex-end;
+  margin-top: auto;
+  width: 100%;
+}
+
+.featured-list {
+  li {
+    margin-bottom: $spacer * 3;
+    transition: $transition-base;
+  }
+
+  .icon {
+    padding-right: $spacer;
+    padding-bottom: $spacer;
+    padding-left: $spacer;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    //@include button-variant(transparent,$value, $value);
+  }
+}
