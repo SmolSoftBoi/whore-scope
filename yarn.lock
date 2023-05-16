@@ -6815,10 +6815,10 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
-pantone-css@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/pantone-css/-/pantone-css-0.3.0.tgz#d26233a9bb26a699c17af4a8c662cb06ed6b35e5"
-  integrity sha512-1tbHtXl0h9gMnprTf/DDVHq+C74uddB4wJ9ldFMx/JG70Kl1GCNtOkZccDvZZVNDz+fRdMjM/Q/UwD7viDm16A==
+pantone-css@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/pantone-css/-/pantone-css-0.4.0.tgz#595626ece844b72ec7a5440d0d30ed860f217fb5"
+  integrity sha512-mwfM2wrb/K4ZAPiaD6wjiiWt4HH0Wln/7r0w4LU6mKv+yx6qoDy242K4PSQzuHDBBXKxojXutwwb6C3X/9/e4Q==
 
 param-case@^3.0.4:
   version "3.0.4"
