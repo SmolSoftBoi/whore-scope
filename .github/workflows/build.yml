@@ -11,6 +11,8 @@ jobs:
         with:
           node-version: "14"
           cache: "yarn"
+        env:
+          FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
       - name: Install
         run: yarn install
       - name: Build
